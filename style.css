@@ -6,12 +6,23 @@
     padding: 0;
   }
 
+
+
   body {
     font-family: 'Urbanist', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
     background: whitesmoke;
+  }
+
+  button {
+    padding: 10px 15px;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
   }
   
   ul {
@@ -46,6 +57,9 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    text-transform: uppercase;
+    
+      
   }
   
   .navbar a:hover {
@@ -66,6 +80,39 @@
   .navbar ul li {
     margin-left: 20px;
   }
+
+  /* navbar responsive 
+
+  .navbar-toggle {
+    display: none;
+  }
+  
+  .navbar-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-toggle-label span {
+      font-size: 1.5em;
+    }
+
+    .navbar-toggle:checked ~ nav {
+        transform: scale(1,1);
+      }
+      
+      .navbar-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+      }
+      */
+
+
+/* hero */
 
   .header {
     background-image:url(images/hero.png);
@@ -94,5 +141,57 @@
   .header p {
     max-width: 510px;
     text-align: center;
+  }
 
+  .header button {
+    text-align: center;
+    background: #F8CE63;
+
+  }
+
+/* first cards section */
+
+  .cards .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+  }
+  
+  .card {
+    flex: 1;
+    background: whitesmoke;
+    color: #333;
+    margin: 20px 10px;
+    padding: 15px 20px;
+  }
+
+  .card h2 {
+    text-transform: uppercase;
+    text-align: left;
+    
+  }
+
+  .card p {
+    max-width: 300px;
+    text-align: left;
+    align-items: center;
+  }
+
+  .card button {
+    background: #D64F24;
+    border: none;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    .cards .container {
+      display: block;
+      text-align: center;
+    }
   }
