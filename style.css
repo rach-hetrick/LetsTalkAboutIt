@@ -20,6 +20,18 @@
     padding: 10px 15px;
     margin-top: 15px;
     color: white;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+  }
+
+  button :hover {
+    padding: 10px 15px;
+    margin-top: 15px;
+    color: white;
+    background: #45456E;
+    border: none;
     font-weight: bold;
     text-transform: uppercase;
     align-items: center;
@@ -63,7 +75,7 @@
   }
   
   .navbar a:hover {
-    color: lightblue;
+    color: #45456E;
   }
   
   .navbar .container {
@@ -144,9 +156,14 @@
   }
 
   .header button {
-    text-align: center;
     background: #F8CE63;
+    justify-content: center;
+    text-align: center;
+  }
 
+  .header button:hover {
+    text-align: center;
+    background: #87AD56;
   }
 
 /* first cards section */
@@ -178,9 +195,15 @@
   }
 
   .card button {
+    display: flex;
+    justify-content: center;
     background: #D64F24;
     border: none;
-    align-items: center;
+    
+  }
+
+  .card button:hover {
+    background: #45456E;
   }
 
   @media (max-width: 768px) {
