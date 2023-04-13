@@ -221,9 +221,10 @@
 
 iframe {
   
+  display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left:10%;
   max-width: 800px;
   
 }
@@ -269,6 +270,8 @@ iframe {
   object-fit: cover;
 }
 
+
+  /* find support section */
 
 
 
