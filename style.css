@@ -286,6 +286,7 @@ iframe {
   padding: 10px;
 }
 
+
 .card-link {
   display: flex;
   background: white;
@@ -298,6 +299,7 @@ iframe {
 display:flex;
 margin: 10px;
 
+
 }
 
 .card-link img {
@@ -308,20 +310,30 @@ margin: 10px;
 
 .card-link a {
   display: flex;
+  width:150px;
   background: #D64F24;
   color: white;
-  height: 30px;
-  padding: 10px;
-  justify-content: center;
-  text-align: center;
+  padding: 8px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-left: 10px;
 }
+
 
 .card-link a:hover {
   background:#F8CE63;
   color: #fff;
+}
+
+@media(max-width: 700px) {
+  .card-link {
+    display:block;
+  } 
+  
 }
 
 
@@ -342,3 +354,46 @@ margin: 10px;
       text-align: center;
     }
   }
+
+
+
+  /* Footer */
+
+footer {
+  background: #87AD56;
+  color: white;
+  text-align: left;
+  padding: 1em;
+  margin-top: 60px;
+}
+
+.footer .logo {
+  margin-left: 20px;
+}
+
+.footer-id {
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.bottom-social i {
+  font-size: 25px;
+  color: white;
+  line-height: 35px;
+}
+
+
+.copyright p {
+  text-align: center;
+  font-size: 10px;
+}
+
