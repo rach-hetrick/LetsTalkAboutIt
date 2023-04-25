@@ -274,7 +274,8 @@ iframe {
   /* find support section */
 
 .container-support {
-        max-width: 1900px;
+        max-width: 1700px;
+        text-align: center;
         margin: auto;
         overflow: auto;
         padding: 2rem;
@@ -297,31 +298,37 @@ iframe {
 
 .card-link h2 {
 display:flex;
-margin: 10px;
+margin-left: 40px;
+text-transform: uppercase;
 
 
 }
 
 .card-link img {
-  width: 50%;
-  height: 300px;
-  object-fit: cover;
+  height: 270px;
+  object-fit: contain;
 }
 
+
 .card-link a {
-  display: flex;
+  display: inline-block;
+  position: absolute;
   width:150px;
+  
   background: #D64F24;
   color: white;
-  padding: 8px;
+  padding: 7px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
-  margin-top: auto;
-  margin-left: 10px;
+  align-items: center;
+  margin-left: 515px;
+  margin-top: 60px;
+  
 }
+
 
 
 .card-link a:hover {
@@ -329,10 +336,15 @@ margin: 10px;
   color: #fff;
 }
 
+
 @media(max-width: 700px) {
   .card-link {
     display:block;
   } 
+
+  .card-link a {
+    display: inline-block;
+  }
   
 }
 
@@ -360,28 +372,32 @@ margin: 10px;
   /* Footer */
 
 footer {
+  display: flex;
+  max-width: 1800px;
   background: #87AD56;
   color: white;
   text-align: left;
-  padding: 1em;
+  padding: 20px;
   margin-top: 60px;
 }
 
-.footer .logo {
-  margin-left: 20px;
+
+
+.footer img {
+  margin-left: 10%;
 }
 
 .footer-id {
   display: flex;
   gap: 10px;
-  font-size: 10px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 26px;
 }
 
-
-.footer-content {
-  display: flex;
-  justify-content: space-evenly;
+.footer-title {
+  text-align: center;
+  position: absolute;
+  margin-left: 50%;
 }
 
 
@@ -393,7 +409,31 @@ footer {
 
 
 .copyright p {
-  text-align: center;
-  font-size: 10px;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 1%;
 }
 
+
+ /* responsive footer */
+
+@media (max-width: 768px) {
+  .footer {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .footer img {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .footer-title {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+}
