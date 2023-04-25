@@ -274,7 +274,7 @@ iframe {
   /* find support section */
 
 .container-support {
-        max-width: 1700px;
+        max-width: 1500px;
         text-align: center;
         margin: auto;
         overflow: auto;
@@ -437,3 +437,52 @@ footer {
   }
 
 }
+
+
+
+ /* about page */
+
+
+ /* hero */
+ .about-hero {
+  background-image:url(images/about-hero.png);
+  color: #fff;
+  height: 550px;
+  background-size:cover;
+  position: relative;
+  justify-content: center;
+}
+
+.about-hero h1 {
+  font-weight: bold;
+  text-transform:uppercase;
+  line-height: 1.5;
+  text-align: center;
+  position:relative;
+}
+
+
+.about-hero .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  height: 700px;
+}
+
+
+ /* campaign posters */
+
+ .poster-container {
+  display: flex;
+  max-width: 1700px;
+  justify-content:space-between;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+ }
+
+ .poster img {
+  height: 400px;
+  margin: 50px;
+ }
