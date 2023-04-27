@@ -486,3 +486,120 @@ footer {
   height: 400px;
   margin: 50px;
  }
+
+ .share {
+  display: block;
+  text-align: center;
+ }
+
+ .share a {
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background:#D64F24;
+  color:white;
+  width: 100px;
+  padding: 10px;
+ }
+
+ .share a:hover {
+  background:#45456E;
+ }
+
+
+ @media(max-width: 700px) {
+  .poster-container {
+    display:block;
+  } 
+
+  .poster img {
+    margin-top: 25px;
+  }
+}
+
+
+ /* paragraph section */
+
+ .card-paragraph {
+  display: flex;
+  flex-direction: row-reverse;
+  background: whitesmoke;
+  margin: 3rem;
+  margin-top: 50px;
+  color: black;
+  padding: 2em;
+}
+
+.card-paragraph h2 {
+  text-transform: uppercase;
+  max-width: 400px;
+  line-height: 28px;
+  margin-top: 15px;
+}
+
+.card-paragraph p {
+  max-width: 500px;
+  margin-right: 25px;
+  margin-top: 10px;
+
+}
+
+.card-paragraph img {
+  object-fit: cover;
+  width: 400px;
+}
+
+@media(max-width: 700px) {
+  .card-paragraph {
+    display: block;
+  }
+}
+
+
+ /* learn more section */
+
+.card-learn {
+  display: flex;
+  background: whitesmoke;
+  color: black;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  
+
+}
+
+.card-learn h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-learn p {
+  text-align: center;
+}
+
+.learn-button {
+  align-items: center;
+  text-align: center;
+}
+
+.learn-button a {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background:#45456E;
+  color: white;
+  width: 100px;
+  padding: 10px;
+  margin-top: 15px;
+  
+}
+
+.learn-button a:hover {
+  background:#87AD56;
+  color: white;
+}
