@@ -290,7 +290,7 @@ iframe {
 
 .card-link {
   display: flex;
-  background: white;
+  background: whitesmoke;
   margin-left: 2rem;
   color: black;
   padding: 2em;
@@ -379,6 +379,15 @@ footer {
   text-align: left;
   padding: 20px;
   margin-top: 60px;
+}
+
+footer a {
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-align: center;
 }
 
 
