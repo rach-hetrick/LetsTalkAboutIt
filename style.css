@@ -376,7 +376,7 @@ footer {
   max-width: 1800px;
   background: #87AD56;
   color: white;
-  text-align: left;
+  text-align: center;
   padding: 20px;
   margin-top: 60px;
 }
@@ -610,5 +610,106 @@ footer a {
 
 .learn-button a:hover {
   background:#87AD56;
+  color: white;
+}
+
+
+/* form page */
+
+.contact-header {
+  background-image:url(images/friends.png);
+  filter: grayscale();
+  color: #fff;
+  height: 550px;
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+
+}
+
+.contact-header h1 {
+  font-weight: bold;
+  text-transform:uppercase;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+.contact-header .contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  height: 700px;
+}
+
+.form-content h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color:#fff;
+}
+
+.form-container {
+  margin: 60px auto 0;
+  width: 700px;
+  display: flex;
+  filter: drop-shadow(5px 5px 0.25rem #cacaca)
+}
+
+
+.form-photo {
+  flex-basis: 50%;
+  background: #999;
+  background-image:url(images/nervous.png);
+  filter:grayscale();
+  background-size: cover;
+}
+
+.form-content {
+  text-align: left;
+  color:#fff;
+}
+
+form {
+  width: 300px;
+  background:#87AD56;
+  padding: 3em;
+}
+
+
+form div {
+  margin: 15px;
+}
+
+label {
+  line-height: 2.5;
+  font-size: .8em;
+}
+
+form input {
+  padding: 5px;
+  width: 100%;
+  border: none;
+}
+
+textarea {
+  width:175px;
+  font-style: normal;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  background:#45456E;
+  color: white;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+button:hover {
+  background:#D64F24;
   color: white;
 }
