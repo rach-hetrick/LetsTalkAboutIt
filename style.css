@@ -417,6 +417,11 @@ footer a {
   font-size: 20px;
   color: white;
   text-align: center;
+  justify-content: center;
+}
+
+footer a:hover {
+  color:#45456E;
 }
 
 
@@ -427,6 +432,8 @@ footer a {
 
 .footer-id {
   display: flex;
+  text-align: center;
+  align-items: center;
   gap: 10px;
   font-size: 16px;
   line-height: 26px;
@@ -434,15 +441,19 @@ footer a {
 
 .footer-title {
   text-align: center;
+  align-items: center;
   position: absolute;
   margin-left: 50%;
 }
+
 
 
 .bottom-social i {
   font-size: 25px;
   color: white;
   line-height: 35px;
+  text-align: right;
+  z-index: 1;
 }
 
 
@@ -745,6 +756,12 @@ button:hover {
 
 
 
-.a2a_kit a2a_kit_size_32 a2a_default_style {
-  background:none;
+.a2a_kit .a2a_kit_size_32 .a2a_default_style {
+  background:#fff;
+  align-content: center;
+}
+
+.share-links {
+  text-align: center;
+  background: whitesmoke;
 }
