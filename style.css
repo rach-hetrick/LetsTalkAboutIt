@@ -541,19 +541,16 @@ footer a:hover {
   text-align: center;
  }
 
- .share a {
+ /*.share a {
   align-items: center;
   text-transform: uppercase;
   text-decoration: none;
-  background:#D64F24;
-  color:white;
   width: 100px;
   padding: 10px;
  }
+ */
 
- .share a:hover {
-  background:#45456E;
- }
+ 
 
 
  @media(max-width: 700px) {
@@ -764,4 +761,13 @@ button:hover {
 .share-links {
   text-align: center;
   background: whitesmoke;
+}
+
+
+#my_centered_buttons { 
+  display: flex; 
+  justify-content: center; 
+  background-color:whitesmoke;
+  margin: 0 auto; 
+  width: 144px;
 }
