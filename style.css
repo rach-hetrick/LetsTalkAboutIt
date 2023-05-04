@@ -402,12 +402,17 @@ text-transform: uppercase;
 
 footer {
   display: flex;
-  max-width: 1800px;
+  justify-content: space-between;
+  /* max-width: 1800px; */
   background: #87AD56;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 60px;
+}
+
+footer > * {
+  flex: 1;
 }
 
 footer a {
@@ -430,38 +435,60 @@ footer a:hover {
   margin-left: 10%;
 }
 
-.footer-id {
+/* .footer-id {
   display: flex;
   text-align: center;
   align-items: center;
   gap: 10px;
   font-size: 16px;
   line-height: 26px;
-  text-transform: uppercase;
+  text-transform: uppercase; */
 }
 
 .footer-title {
   text-align: center;
-  align-items: center;
-  position: absolute;
-  margin-left: 50%;
+  /* align-items: center; */
+  /* position: absolute;
+  margin-left: 50%; */
 }
 
 
 
 .bottom-social {
+display: flex;
+justify-content: center;
   font-size: 25px;
   color: white;
   line-height: 35px;
-  text-align: right;
-  z-index: 3;
+  
+}
+
+/* .bottom-social a {
+  align: right;
+} */
+
+.bottom-social li {
+  margin: .5em;
+  
+  
+}
+
+.bottom-social i {
+  font-size: 1.5em;
+  
+
+}
+
+.bottom-social ul {
+  display: flex;
 }
 
 
 .copyright p {
   text-align: left;
+  position: absolute;
   font-size: 14px;
-  margin-left: 1%;
+  margin-left: 10%;
 }
 
 
@@ -481,7 +508,7 @@ footer a:hover {
   }
 
   .footer-title {
-    display: block;
+    /* display: block; */
     padding-top: 50px;
     text-align: center;
   }
@@ -753,6 +780,7 @@ button:hover {
 }
 
 
+ /* share buttons on about page */
 
 .a2a_kit .a2a_kit_size_32 .a2a_default_style {
   background:#fff;
@@ -772,3 +800,154 @@ button:hover {
   margin: 0 auto; 
   width: 144px;
 }
+
+
+ /* responsive navigation 
+
+ .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+ }
+
+ #check {
+  display: none;
+ }
+
+ @media (max-width: 950px;) {
+
+  nav ul li a {
+    font-size: 16px;
+
+  }
+ }
+
+ @media (max-width: 860px;) {
+  .checkbtn{
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#45456E;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+ }
+
+
+
+
+ /* new navigation */
+
+
+
+ nav {
+  background:#87AD56;
+  color: white;
+  height: 80px;
+  width: 100%;
+ }
+
+ label.logo img {
+  padding: 25px;
+  width: 300px;
+  justify-content: center;
+ }
+
+ nav ul {
+  float: right;
+  margin-right: 20px;
+ }
+
+ nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+
+ }
+
+ nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+ }
+
+ a.active, a:hover {
+  color:#45456E;
+ }
+
+ .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+ }
+
+ #check {
+  display: none;
+ }
+
+ @media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+nav ul li a {
+  font-size: 16px;
+}
+
+ }
+
+
+ @media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#87AD56;
+    color:#fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover, a.active {
+    background: none;
+    color:#45456E;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+
+  }
+
+ }
+
